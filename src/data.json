@@ -1,0 +1,896 @@
+{
+    "resourceType": "Bundle",
+    "id": "d7d76052-a840-48c7-9bf8-ce38c6e37351",
+    "meta": {
+      "lastUpdated": "2021-01-19T21:03:22.432+00:00"
+    },
+    "type": "searchset",
+    "link": [ {
+      "relation": "self",
+      "url": "http://hapi.fhir.org/baseR4/Patient?_format=json"
+    }, {
+      "relation": "next",
+      "url": "http://hapi.fhir.org/baseR4?_getpages=d7d76052-a840-48c7-9bf8-ce38c6e37351&_getpagesoffset=20&_count=20&_format=json&_pretty=true&_bundletype=searchset"
+    } ],
+    "entry": [ {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Patient/619930",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "619930",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-02-12T09:10:13.114+00:00",
+          "source": "#7428i3wUzH5Inkv8"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Frederick <b>GRAY </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>689</td></tr></tbody></table></div>"
+        },
+        "identifier": [ {
+          "system": "http://example.org",
+          "value": "689"
+        } ],
+        "active": true,
+        "name": [ {
+          "text": "Frederick Gray",
+          "family": "Gray",
+          "given": [ "Frederick" ]
+        } ],
+        "gender": "male",
+        "deceasedBoolean": false,
+        "contact": [ {
+          "telecom": [ {
+            "system": "phone",
+            "value": "5555555555"
+          } ],
+          "address": {
+            "use": "home",
+            "text": "100 A St\nNapa, CA 94558",
+            "line": [ "100 A St" ],
+            "city": "Napa",
+            "state": "CA",
+            "postalCode": "94558"
+          }
+        } ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Patient/619931",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "619931",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-02-12T09:11:09.207+00:00",
+          "source": "#KrK6yfq7pgHEsryb"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Amy <b>BROWN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>123</td></tr></tbody></table></div>"
+        },
+        "identifier": [ {
+          "system": "http://example.org",
+          "value": "123"
+        } ],
+        "active": true,
+        "name": [ {
+          "text": "Amy Brown",
+          "family": "Brown",
+          "given": [ "Amy" ]
+        } ],
+        "gender": "female",
+        "deceasedBoolean": false,
+        "contact": [ {
+          "telecom": [ {
+            "system": "phone",
+            "value": "5555555555"
+          } ],
+          "address": {
+            "use": "home",
+            "text": "100 Main St\nNapa, CA 94559",
+            "line": [ "100 Main St" ],
+            "city": "Napa",
+            "state": "CA",
+            "postalCode": "94559"
+          }
+        } ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Patient/619934",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "619934",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-02-12T09:11:10.715+00:00",
+          "source": "#QWXD18LVUZ0Q0hDI"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Daniel <b>CRIMSON </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>456</td></tr></tbody></table></div>"
+        },
+        "identifier": [ {
+          "system": "http://example.org",
+          "value": "456"
+        } ],
+        "active": true,
+        "name": [ {
+          "text": "Daniel Crimson",
+          "family": "Crimson",
+          "given": [ "Daniel" ]
+        } ],
+        "gender": "male",
+        "deceasedBoolean": false,
+        "contact": [ {
+          "telecom": [ {
+            "system": "phone",
+            "value": "5555555555"
+          } ],
+          "address": {
+            "use": "home",
+            "text": "100 Yahome St\nNapa, CA 94558",
+            "line": [ "100 Yahome St" ],
+            "city": "Napa",
+            "state": "CA",
+            "postalCode": "94558"
+          }
+        } ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Patient/619935",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "619935",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-02-12T09:11:11.234+00:00",
+          "source": "#CCpQrqyO0S74zNt3"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Elizabeth <b>GREEN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>567</td></tr></tbody></table></div>"
+        },
+        "identifier": [ {
+          "system": "http://example.org",
+          "value": "567"
+        } ],
+        "active": true,
+        "name": [ {
+          "text": "Elizabeth Green",
+          "family": "Green",
+          "given": [ "Elizabeth" ]
+        } ],
+        "gender": "female",
+        "deceasedBoolean": false,
+        "contact": [ {
+          "telecom": [ {
+            "system": "phone",
+            "value": "5555555555"
+          } ],
+          "address": {
+            "use": "home",
+            "text": "100 Trancas Blvd\nNapa, CA 94559",
+            "line": [ "100 Trancas Blvd" ],
+            "city": "Napa",
+            "state": "CA",
+            "postalCode": "94559"
+          }
+        } ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Patient/619936",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "619936",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-02-12T09:11:11.716+00:00",
+          "source": "#vOWiHn2J2YW2h5Wa"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Frederick <b>GRAY </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>689</td></tr></tbody></table></div>"
+        },
+        "identifier": [ {
+          "system": "http://example.org",
+          "value": "689"
+        } ],
+        "active": true,
+        "name": [ {
+          "text": "Frederick Gray",
+          "family": "Gray",
+          "given": [ "Frederick" ]
+        } ],
+        "gender": "male",
+        "deceasedBoolean": false,
+        "contact": [ {
+          "telecom": [ {
+            "system": "phone",
+            "value": "5555555555"
+          } ],
+          "address": {
+            "use": "home",
+            "text": "100 A St\nNapa, CA 94558",
+            "line": [ "100 A St" ],
+            "city": "Napa",
+            "state": "CA",
+            "postalCode": "94558"
+          }
+        } ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Patient/619937",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "619937",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-02-12T09:12:12.880+00:00",
+          "source": "#Ic8bCQOmrRhO7so7"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Amy <b>BROWN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>123</td></tr></tbody></table></div>"
+        },
+        "identifier": [ {
+          "system": "http://example.org",
+          "value": "123"
+        } ],
+        "active": true,
+        "name": [ {
+          "text": "Amy Brown",
+          "family": "Brown",
+          "given": [ "Amy" ]
+        } ],
+        "gender": "female",
+        "deceasedBoolean": false,
+        "contact": [ {
+          "telecom": [ {
+            "system": "phone",
+            "value": "5555555555"
+          } ],
+          "address": {
+            "use": "home",
+            "text": "100 Main St\nNapa, CA 94559",
+            "line": [ "100 Main St" ],
+            "city": "Napa",
+            "state": "CA",
+            "postalCode": "94559"
+          }
+        } ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Patient/619940",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "619940",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-02-12T09:12:14.254+00:00",
+          "source": "#wuzi0iNu1zOYcGNX"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Daniel <b>CRIMSON </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>456</td></tr></tbody></table></div>"
+        },
+        "identifier": [ {
+          "system": "http://example.org",
+          "value": "456"
+        } ],
+        "active": true,
+        "name": [ {
+          "text": "Daniel Crimson",
+          "family": "Crimson",
+          "given": [ "Daniel" ]
+        } ],
+        "gender": "male",
+        "deceasedBoolean": false,
+        "contact": [ {
+          "telecom": [ {
+            "system": "phone",
+            "value": "5555555555"
+          } ],
+          "address": {
+            "use": "home",
+            "text": "100 Yahome St\nNapa, CA 94558",
+            "line": [ "100 Yahome St" ],
+            "city": "Napa",
+            "state": "CA",
+            "postalCode": "94558"
+          }
+        } ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Patient/619941",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "619941",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-02-12T09:12:14.717+00:00",
+          "source": "#7L04xT7Ry5ChVjR7"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Elizabeth <b>GREEN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>567</td></tr></tbody></table></div>"
+        },
+        "identifier": [ {
+          "system": "http://example.org",
+          "value": "567"
+        } ],
+        "active": true,
+        "name": [ {
+          "text": "Elizabeth Green",
+          "family": "Green",
+          "given": [ "Elizabeth" ]
+        } ],
+        "gender": "female",
+        "deceasedBoolean": false,
+        "contact": [ {
+          "telecom": [ {
+            "system": "phone",
+            "value": "5555555555"
+          } ],
+          "address": {
+            "use": "home",
+            "text": "100 Trancas Blvd\nNapa, CA 94559",
+            "line": [ "100 Trancas Blvd" ],
+            "city": "Napa",
+            "state": "CA",
+            "postalCode": "94559"
+          }
+        } ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Patient/619942",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "619942",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-02-12T09:12:15.210+00:00",
+          "source": "#s2zT9itsFikGATr4"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Frederick <b>GRAY </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>689</td></tr></tbody></table></div>"
+        },
+        "identifier": [ {
+          "system": "http://example.org",
+          "value": "689"
+        } ],
+        "active": true,
+        "name": [ {
+          "text": "Frederick Gray",
+          "family": "Gray",
+          "given": [ "Frederick" ]
+        } ],
+        "gender": "male",
+        "deceasedBoolean": false,
+        "contact": [ {
+          "telecom": [ {
+            "system": "phone",
+            "value": "5555555555"
+          } ],
+          "address": {
+            "use": "home",
+            "text": "100 A St\nNapa, CA 94558",
+            "line": [ "100 A St" ],
+            "city": "Napa",
+            "state": "CA",
+            "postalCode": "94558"
+          }
+        } ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Patient/619943",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "619943",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-02-12T09:13:16.673+00:00",
+          "source": "#LoJXrBNis5S6ccv7"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Amy <b>BROWN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>123</td></tr></tbody></table></div>"
+        },
+        "identifier": [ {
+          "system": "http://example.org",
+          "value": "123"
+        } ],
+        "active": true,
+        "name": [ {
+          "text": "Amy Brown",
+          "family": "Brown",
+          "given": [ "Amy" ]
+        } ],
+        "gender": "female",
+        "deceasedBoolean": false,
+        "contact": [ {
+          "telecom": [ {
+            "system": "phone",
+            "value": "5555555555"
+          } ],
+          "address": {
+            "use": "home",
+            "text": "100 Main St\nNapa, CA 94559",
+            "line": [ "100 Main St" ],
+            "city": "Napa",
+            "state": "CA",
+            "postalCode": "94559"
+          }
+        } ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Patient/619946",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "619946",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-02-12T09:13:18.063+00:00",
+          "source": "#16b7YjpgwSefv8rZ"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Daniel <b>CRIMSON </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>456</td></tr></tbody></table></div>"
+        },
+        "identifier": [ {
+          "system": "http://example.org",
+          "value": "456"
+        } ],
+        "active": true,
+        "name": [ {
+          "text": "Daniel Crimson",
+          "family": "Crimson",
+          "given": [ "Daniel" ]
+        } ],
+        "gender": "male",
+        "deceasedBoolean": false,
+        "contact": [ {
+          "telecom": [ {
+            "system": "phone",
+            "value": "5555555555"
+          } ],
+          "address": {
+            "use": "home",
+            "text": "100 Yahome St\nNapa, CA 94558",
+            "line": [ "100 Yahome St" ],
+            "city": "Napa",
+            "state": "CA",
+            "postalCode": "94558"
+          }
+        } ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Patient/619947",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "619947",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-02-12T09:13:18.535+00:00",
+          "source": "#RxquLy02GHyLoxdX"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Elizabeth <b>GREEN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>567</td></tr></tbody></table></div>"
+        },
+        "identifier": [ {
+          "system": "http://example.org",
+          "value": "567"
+        } ],
+        "active": true,
+        "name": [ {
+          "text": "Elizabeth Green",
+          "family": "Green",
+          "given": [ "Elizabeth" ]
+        } ],
+        "gender": "female",
+        "deceasedBoolean": false,
+        "contact": [ {
+          "telecom": [ {
+            "system": "phone",
+            "value": "5555555555"
+          } ],
+          "address": {
+            "use": "home",
+            "text": "100 Trancas Blvd\nNapa, CA 94559",
+            "line": [ "100 Trancas Blvd" ],
+            "city": "Napa",
+            "state": "CA",
+            "postalCode": "94559"
+          }
+        } ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Patient/619948",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "619948",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-02-12T09:13:19.000+00:00",
+          "source": "#ywFMZZ4xHAxn7FCe"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Frederick <b>GRAY </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>689</td></tr></tbody></table></div>"
+        },
+        "identifier": [ {
+          "system": "http://example.org",
+          "value": "689"
+        } ],
+        "active": true,
+        "name": [ {
+          "text": "Frederick Gray",
+          "family": "Gray",
+          "given": [ "Frederick" ]
+        } ],
+        "gender": "male",
+        "deceasedBoolean": false,
+        "contact": [ {
+          "telecom": [ {
+            "system": "phone",
+            "value": "5555555555"
+          } ],
+          "address": {
+            "use": "home",
+            "text": "100 A St\nNapa, CA 94558",
+            "line": [ "100 A St" ],
+            "city": "Napa",
+            "state": "CA",
+            "postalCode": "94558"
+          }
+        } ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Patient/619949",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "619949",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-02-12T09:13:38.066+00:00",
+          "source": "#P2wbwzm5lrdJdlwE"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Amy <b>BROWN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>123</td></tr></tbody></table></div>"
+        },
+        "identifier": [ {
+          "system": "http://example.org",
+          "value": "123"
+        } ],
+        "active": true,
+        "name": [ {
+          "text": "Amy Brown",
+          "family": "Brown",
+          "given": [ "Amy" ]
+        } ],
+        "gender": "female",
+        "deceasedBoolean": false,
+        "contact": [ {
+          "telecom": [ {
+            "system": "phone",
+            "value": "5555555555"
+          } ],
+          "address": {
+            "use": "home",
+            "text": "100 Main St\nNapa, CA 94559",
+            "line": [ "100 Main St" ],
+            "city": "Napa",
+            "state": "CA",
+            "postalCode": "94559"
+          }
+        } ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Patient/619952",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "619952",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-02-12T09:13:39.485+00:00",
+          "source": "#quyjVpFyzrKhaltz"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Daniel <b>CRIMSON </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>456</td></tr></tbody></table></div>"
+        },
+        "identifier": [ {
+          "system": "http://example.org",
+          "value": "456"
+        } ],
+        "active": true,
+        "name": [ {
+          "text": "Daniel Crimson",
+          "family": "Crimson",
+          "given": [ "Daniel" ]
+        } ],
+        "gender": "male",
+        "deceasedBoolean": false,
+        "contact": [ {
+          "telecom": [ {
+            "system": "phone",
+            "value": "5555555555"
+          } ],
+          "address": {
+            "use": "home",
+            "text": "100 Yahome St\nNapa, CA 94558",
+            "line": [ "100 Yahome St" ],
+            "city": "Napa",
+            "state": "CA",
+            "postalCode": "94558"
+          }
+        } ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Patient/619953",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "619953",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-02-12T09:13:39.972+00:00",
+          "source": "#sOjj4iSB723HEP3j"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Elizabeth <b>GREEN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>567</td></tr></tbody></table></div>"
+        },
+        "identifier": [ {
+          "system": "http://example.org",
+          "value": "567"
+        } ],
+        "active": true,
+        "name": [ {
+          "text": "Elizabeth Green",
+          "family": "Green",
+          "given": [ "Elizabeth" ]
+        } ],
+        "gender": "female",
+        "deceasedBoolean": false,
+        "contact": [ {
+          "telecom": [ {
+            "system": "phone",
+            "value": "5555555555"
+          } ],
+          "address": {
+            "use": "home",
+            "text": "100 Trancas Blvd\nNapa, CA 94559",
+            "line": [ "100 Trancas Blvd" ],
+            "city": "Napa",
+            "state": "CA",
+            "postalCode": "94559"
+          }
+        } ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Patient/619954",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "619954",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-02-12T09:13:40.436+00:00",
+          "source": "#dbH69Lp9uIVO2jB5"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Frederick <b>GRAY </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>689</td></tr></tbody></table></div>"
+        },
+        "identifier": [ {
+          "system": "http://example.org",
+          "value": "689"
+        } ],
+        "active": true,
+        "name": [ {
+          "text": "Frederick Gray",
+          "family": "Gray",
+          "given": [ "Frederick" ]
+        } ],
+        "gender": "male",
+        "deceasedBoolean": false,
+        "contact": [ {
+          "telecom": [ {
+            "system": "phone",
+            "value": "5555555555"
+          } ],
+          "address": {
+            "use": "home",
+            "text": "100 A St\nNapa, CA 94558",
+            "line": [ "100 A St" ],
+            "city": "Napa",
+            "state": "CA",
+            "postalCode": "94558"
+          }
+        } ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Patient/619955",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "619955",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-02-12T09:14:52.549+00:00",
+          "source": "#khTt0MwBsEfRoVBi"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Amy <b>BROWN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>123</td></tr></tbody></table></div>"
+        },
+        "identifier": [ {
+          "system": "http://example.org",
+          "value": "123"
+        } ],
+        "active": true,
+        "name": [ {
+          "text": "Amy Brown",
+          "family": "Brown",
+          "given": [ "Amy" ]
+        } ],
+        "gender": "female",
+        "deceasedBoolean": false,
+        "contact": [ {
+          "telecom": [ {
+            "system": "phone",
+            "value": "5555555555"
+          } ],
+          "address": {
+            "use": "home",
+            "text": "100 Main St\nNapa, CA 94559",
+            "line": [ "100 Main St" ],
+            "city": "Napa",
+            "state": "CA",
+            "postalCode": "94559"
+          }
+        } ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Patient/619958",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "619958",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-02-12T09:14:54.023+00:00",
+          "source": "#A2INHl676WW0FdbG"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Daniel <b>CRIMSON </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>456</td></tr></tbody></table></div>"
+        },
+        "identifier": [ {
+          "system": "http://example.org",
+          "value": "456"
+        } ],
+        "active": true,
+        "name": [ {
+          "text": "Daniel Crimson",
+          "family": "Crimson",
+          "given": [ "Daniel" ]
+        } ],
+        "gender": "male",
+        "deceasedBoolean": false,
+        "contact": [ {
+          "telecom": [ {
+            "system": "phone",
+            "value": "5555555555"
+          } ],
+          "address": {
+            "use": "home",
+            "text": "100 Yahome St\nNapa, CA 94558",
+            "line": [ "100 Yahome St" ],
+            "city": "Napa",
+            "state": "CA",
+            "postalCode": "94558"
+          }
+        } ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }, {
+      "fullUrl": "http://hapi.fhir.org/baseR4/Patient/619959",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "619959",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-02-12T09:14:54.487+00:00",
+          "source": "#fEdJnoEoNODxZbSQ"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Elizabeth <b>GREEN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>567</td></tr></tbody></table></div>"
+        },
+        "identifier": [ {
+          "system": "http://example.org",
+          "value": "567"
+        } ],
+        "active": true,
+        "name": [ {
+          "text": "Elizabeth Green",
+          "family": "Green",
+          "given": [ "Elizabeth" ]
+        } ],
+        "gender": "female",
+        "deceasedBoolean": false,
+        "contact": [ {
+          "telecom": [ {
+            "system": "phone",
+            "value": "5555555555"
+          } ],
+          "address": {
+            "use": "home",
+            "text": "100 Trancas Blvd\nNapa, CA 94559",
+            "line": [ "100 Trancas Blvd" ],
+            "city": "Napa",
+            "state": "CA",
+            "postalCode": "94559"
+          }
+        } ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    } ]
+  }
