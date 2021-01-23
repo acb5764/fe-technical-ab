@@ -1,6 +1,8 @@
+import { Grid } from "@material-ui/core";
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import bwellLogo from "../bwell_logo.png";
+import profileImage from "../profileImage.png";
 
 function Navigate(props) {
   var userName = "Rick Astley";
@@ -12,13 +14,18 @@ function Navigate(props) {
         style={{ backgroundColor: "#2E3586" }}
       >
         <div className="container">
-            
           <img src={bwellLogo} className="App-logo" alt="logo"></img>
           <Link to="/" className="brandName">
             b.well FE Assignment
           </Link>
-          <div style={{ color: "white" }}>
-            <ul className="navbar-nav">
+
+          <div>
+            <ul className="navbar-navigate">
+              <img
+                src={profileImage}
+                className="Profile-image"
+                alt="logo"
+              ></img>
               <Link to="/" className="link">
                 {userName}
               </Link>

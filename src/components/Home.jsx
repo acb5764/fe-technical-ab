@@ -21,7 +21,7 @@ function Home() {
   const [birthGender, setBirthGender] = useState(0);
   const [birthDate, setBirthDate] = useState(0);
   const [phoneNumber, setPhoneNumber] = useState(0);
-  const [address, setAddress] = useState(0); //There is probably a better way to do this..
+  const [address, setAddress] = useState(0); //There is probably a better way to do this.. But it works! If you know of a better way I could have done this, I am eager to learn.
   const useStyles = makeStyles({
     table: {
       minWidth: 300,
@@ -72,59 +72,53 @@ function Home() {
 
   let patients = []; //declare array for our objects
 
-  if (typeof responseData.entry != "undefined") {
-    for (let i = 0; i < responseData.entry.length; i++) {
-      //This conditional block allows us to test for the most basic requirements to meet the data requirements of the tables.
-      //The data from this source is often missing entire categories of data, in which case I do not want to render.
-      //It is possible to stringify the data and render even if missing some fields, but I don't think thats necessary here. Its just a random feed.
-
-      if (
-        responseData.entry[i].resource &&
-        responseData.entry[i].resource.id &&
-        responseData.entry[i].resource.gender &&
-        responseData.entry[i].resource.birthDate &&
-        responseData.entry[i].resource.name &&
-        responseData.entry[i].resource.address &&
-        responseData.entry[i].resource.telecom &&
-        responseData.entry[i].resource.telecom[0].value &&
-        responseData.entry[i].resource.name[0].given &&
-        responseData.entry[i].resource.name[0].family
-      )
-        patients.push({
-          patientID: responseData.entry[i].resource.id,
-          firstName: responseData.entry[i].resource.name[0].given[0],
-          lastName: responseData.entry[i].resource.name[0].family,
-          birthGender: responseData.entry[i].resource.gender,
-          birthDate: responseData.entry[i].resource.birthDate,
-          address:
-            responseData.entry[i].resource.address[0].line[0] +
-            " " +
-            responseData.entry[i].resource.address[0].city +
-            ", " +
-            responseData.entry[i].resource.address[0].state +
-            " " +
-            responseData.entry[i].resource.address[0].country,
-          phoneNumber: responseData.entry[i].resource.telecom[0].value,
-        });
+  function parseString(theTerm, spacing) {
+    let start = convertedToString.search(theTerm);
+    let end = convertedToString.indexOf('"', start + spacing);
+    if (start >= 0 && end >= 0) {
+      return convertedToString.substring(start + spacing, end);
+    } else {
+      return "NULL";
     }
   }
-  //conditionals to make sure we actually recieved an object of quality (few and far between)
 
-  if (patients.length < 20 && responseData.entry) {
-    for (let i = 0; i < 20; i++)
+  if (typeof responseData.entry != "undefined") {
+    for (let i = 0; i < responseData.entry.length; i++) {
+      var convertedToString = "";
+      let idNum = i;
+      let tempFirstName = "NULL";
+      let tempLastName = tempFirstName;
+      let tempGender = "NULL";
+      let tempBirthDate = "NULL";
+      let tempAddress = "NULL";
+      let tempPhone = "NULL";
+
+      if (responseData.entry[i].resource)
+        convertedToString = JSON.stringify(responseData.entry[i].resource);
+
+      idNum = parseString("id", 5);
+      tempFirstName = parseString("given", 9);
+      tempLastName = parseString("family", 9);
+      tempGender = parseString("gender", 9);
+      tempBirthDate = parseString("birthDate", 12);
+      tempAddress = parseString("address", 19);
+      tempPhone = parseString("phone", 16);
+
       patients.push({
-        patientID: i + "00",
-        firstName: "Never ",
-        lastName: "Gonna",
-        birthGender: "Give you Up",
-        birthDate: "Or let you down",
-        address: "10 Broad Street New York NY U.S.A.",
-        phoneNumber: "111.111.1111",
+        patientID: idNum,
+        firstName: tempFirstName,
+        lastName: tempLastName,
+        birthGender: tempGender,
+        birthDate: tempBirthDate,
+        address: tempAddress,
+        phoneNumber: tempPhone,
       });
+    }
   }
+
   function showDetails(patientNumber) {
-    const found = patients.find((element) => (element) =>
-      element === patientNumber
+    const found = patients.find(
+      (element) => element.patientID === patientNumber
     );
 
     setPatient(patientNumber);

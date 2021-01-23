@@ -1,5 +1,5 @@
 .sidebar {
-  position: fixed;
+  position: absolute;
   top: 10;
   left: -270px;
   width: 270px;
@@ -66,6 +66,8 @@
   margin: 0px;
   height: 70px;
   width: 124px;
+  margin-top: -10px;
+  margin-bottom: -10px;
 }
 .container {
   display: flex;
@@ -77,4 +79,20 @@
 }
 .customButtons {
   background-color: rgb(185, 185, 185) !important;
+}
+.Profile-image {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-top: 3px;
+  margin-left: -40px;
+  border-radius: 20px;
+}
+.navbar-navigate {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
 }
