@@ -59,7 +59,7 @@ function Home() {
   //use react hooks to store the data without making a mess with an unnecessary class function
   let [responseData, setResponseData] = React.useState("");
   const fetchData = React.useCallback(() => {
-    fetch("https://hapi.fhir.org/baseR4/Patient?_format=json")
+    fetch("https://vonk.fire.ly/R4/Patient?_format=json")
       .then((response) => response.json())
       .then((data) => setResponseData(data))
       .catch((error) => {
