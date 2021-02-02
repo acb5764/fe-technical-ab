@@ -13,41 +13,54 @@ function Sidebar() {
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => setSidebar(!sidebar);
   return (
-    <nav className={sidebar ? "sidebar active" : "sidebar"}>
-      <button className="hamburger" type="button" onClick={showSidebar}>
+    <nav
+      className={sidebar ? "sidebar active" : "sidebar"}
+      aria-label="Sidebar Div"
+    >
+      <button
+        aria-label="Toggle Sidebar"
+        className="hamburger"
+        type="button"
+        onClick={showSidebar}
+      >
         <div></div>
       </button>
 
-      <ul onClick={showSidebar}>
-
-        <li>
+      <ul
+        aria-label="Sidebar items"
+        tabindex="0"
+        role="document"
+        onClick={showSidebar}
+      >
+        <li aria-label="Home" tabIndex="0">
           <Link to="/" className="link">
-            <FaHome /> Home
+            <FaHome aria-label="House Icon" /> Home
           </Link>
         </li>
-        <li>
+        <li tabIndex="0">
           <Link to="/" className="link">
-            <FaHotjar /> FHIR Exercise
+            <FaHotjar aria-label="Hot Jar Icon" /> FHIR Exercise
           </Link>
         </li>
-        <li>
+        <li tabIndex="0">
           <Link to="/" className="link">
-            <FaRegQuestionCircle /> Lorem Ipsum Dolor Sit Amet
+            <FaRegQuestionCircle aria-label="Question Icon" /> Lorem Ipsum Dolor
+            Sit Amet
           </Link>
         </li>
-        <li>
+        <li tabIndex="0">
           <Link to="/" className="link">
-            <FaRegQuestionCircle /> Lorem Ipsum
+            <FaRegQuestionCircle aria-label="Question Icon" /> Lorem Ipsum
           </Link>
         </li>
-        <li>
+        <li tabIndex="0">
           <Link to="/" className="link">
-            <FaComments /> Support
+            <FaComments aria-label="Support Icon" /> Support
           </Link>
         </li>
-        <li>
+        <li tabIndex="0">
           <Link to="/" className="link">
-            <FaCogs /> Settings
+            <FaCogs aria-label="Settings Icon" /> Settings
           </Link>
         </li>
       </ul>

@@ -9,6 +9,7 @@ function Navigate(props) {
   return (
     <div className="navigate">
       <nav
+        aria-label="Navigation Bar"
         className="navbar navnar-expand"
         style={{ backgroundColor: "#2E3586" }}
       >
@@ -19,11 +20,11 @@ function Navigate(props) {
           </Link>
 
           <div>
-            <ul className="navbar-navigate">
+            <ul className="navbar-navigate" aria-label="Navigate Account">
               <img
                 src={profileImage}
                 className="Profile-image"
-                alt="logo"
+                alt="bwell logo"
               ></img>
               <Link to="/" className="link">
                 {userName}

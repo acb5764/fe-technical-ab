@@ -43,11 +43,12 @@ function Home() {
       top: 130,
       left: 330,
       zIndex: 1,
+      width: "60vw",
     },
     paper: {
       padding: "20px",
       margin: "auto",
-      width: 1010,
+      width: "100%",
       height: 600,
       backgroundColor: "aliceblue",
     },
@@ -59,7 +60,7 @@ function Home() {
   //use react hooks to store the data without making a mess with an unnecessary class function
   let [responseData, setResponseData] = React.useState("");
   const fetchData = React.useCallback(() => {
-    fetch("https://vonk.fire.ly/R4/Patient?_format=json")
+    fetch("https://hapi.fhir.org/baseR4/Patient?_format=json")
       .then((response) => response.json())
       .then((data) => setResponseData(data))
       .catch((error) => {
@@ -86,23 +87,24 @@ function Home() {
     for (let i = 0; i < responseData.entry.length; i++) {
       var convertedToString = "";
       let idNum = i;
-      let tempFirstName = "NULL";
-      let tempLastName = tempFirstName;
-      let tempGender = "NULL";
-      let tempBirthDate = "NULL";
-      let tempAddress = "NULL";
-      let tempPhone = "NULL";
 
       if (responseData.entry[i].resource)
         convertedToString = JSON.stringify(responseData.entry[i].resource);
 
       idNum = parseString("id", 5);
-      tempFirstName = parseString("given", 9);
-      tempLastName = parseString("family", 9);
-      tempGender = parseString("gender", 9);
-      tempBirthDate = parseString("birthDate", 12);
-      tempAddress = parseString("address", 19);
-      tempPhone = parseString("phone", 16);
+      let tempFirstName = parseString("given", 9);
+      let tempLastName = parseString("family", 9);
+      let tempGender = parseString("gender", 9);
+      let tempBirthDate = parseString("birthDate", 12);
+      let tempAddress =
+        parseString("line", 8) +
+        " " +
+        parseString("city", 7) +
+        ", " +
+        parseString("state", 8) +
+        " " +
+        parseString("postalCode", 13);
+      let tempPhone = parseString("phone", 16);
 
       patients.push({
         patientID: idNum,
@@ -141,28 +143,34 @@ function Home() {
           size="small"
           aria-label="Patient Table"
         >
-          <TableHead>
-            <TableRow>
+          <TableHead aria-label="Table Heading">
+            <TableRow aria-label="Table Heading Row">
               <TableCell>Name</TableCell>
               <TableCell>Sex at Birth</TableCell>
               <TableCell>Date of Birth</TableCell>
-              <TableCell />
+              <TableCell aria-label="Details Header" />
             </TableRow>
           </TableHead>
           <TableBody>
             {patients.map((row) => (
-              <TableRow key={row.patientID}>
-                <TableCell>
+              <TableRow
+                key={row.patientID}
+                aria-label={row.firstName + " " + row.lastName}
+              >
+                <TableCell aria-label="Patient Name">
                   {" "}
                   {row.firstName} {row.lastName}{" "}
                 </TableCell>
-                <TableCell> {row.birthGender} </TableCell>
-                <TableCell> {row.birthDate} </TableCell>
-                <TableCell>
+                <TableCell aria-label="Birth Gender">
+                  {" "}
+                  {row.birthGender}{" "}
+                </TableCell>
+                <TableCell aria-label="Birth Date"> {row.birthDate} </TableCell>
+                <TableCell aria-label="Get Patient Details">
                   <Button
                     variant="outlined"
                     size="small"
-                    aria-label="Get Patient Details"
+                    aria-label="Details Button"
                     onClick={() => showDetails(row.patientID)}
                   >
                     Show More
@@ -174,12 +182,13 @@ function Home() {
         </Table>
         {patient !== 0 && (
           <div className={classes.root}>
-            <Paper className={classes.paper}>
-              <div style={{ alignItems: "start" }}>
+            <Paper className={classes.paper} aria-label="Details Component">
+              <div style={{ alignItems: "start" }} aria-label="Details">
                 <Button
                   variant="outlined"
                   size="small"
                   aria-label="Hide Patient Details"
+                  tabIndex="0"
                   startIcon={<FaArrowLeft />}
                   onClick={() => setPatient(0)}
                 >
@@ -199,17 +208,17 @@ function Home() {
               <h5
                 style={{
                   marginTop: "-100px",
-                  marginLeft: "600px",
+                  marginLeft: "25vw",
                   color: "#2E3586",
                 }}
               >
                 Contact Information
               </h5>
-              <h6 style={{ marginTop: "0px", marginLeft: "600px" }}>
+              <h6 style={{ marginTop: "0px", marginLeft: "25vw" }}>
                 {" "}
                 Address: {address}
               </h6>
-              <h6 style={{ marginTop: "0px", marginLeft: "600px" }}>
+              <h6 style={{ marginTop: "0px", marginLeft: "25vw" }}>
                 {" "}
                 Phone Number: {phoneNumber}
               </h6>
