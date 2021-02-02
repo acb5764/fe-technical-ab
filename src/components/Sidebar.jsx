@@ -28,7 +28,7 @@ function Sidebar() {
 
       <ul
         aria-label="Sidebar items"
-        tabindex="0"
+        tabIndex="0"
         role="document"
         onClick={showSidebar}
       >

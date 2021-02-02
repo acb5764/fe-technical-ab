@@ -88,7 +88,7 @@ function Home() {
       var convertedToString = "";
       let idNum = i;
 
-      if (responseData.entry[i].resource)
+      if (responseData.entry[i].resource){
         convertedToString = JSON.stringify(responseData.entry[i].resource);
 
       idNum = parseString("id", 5);
@@ -96,14 +96,7 @@ function Home() {
       let tempLastName = parseString("family", 9);
       let tempGender = parseString("gender", 9);
       let tempBirthDate = parseString("birthDate", 12);
-      let tempAddress =
-        parseString("line", 8) +
-        " " +
-        parseString("city", 7) +
-        ", " +
-        parseString("state", 8) +
-        " " +
-        parseString("postalCode", 13);
+      let tempAddress = `${parseString("line", 8)} ${parseString("city", 8)}, ${parseString("state", 8)} ${parseString("postalCode", 13)}`;
       let tempPhone = parseString("phone", 16);
 
       patients.push({
@@ -115,6 +108,7 @@ function Home() {
         address: tempAddress,
         phoneNumber: tempPhone,
       });
+    }
     }
   }
 
