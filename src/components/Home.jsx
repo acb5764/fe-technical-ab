@@ -28,11 +28,11 @@ function Home() {
     },
     tableContainer: {
       width: "60%",
-      marginLeft: "330px",
+      marginLeft: "18vw",
       backgroundColor: "aliceblue",
     },
     heading: {
-      marginLeft: "330px",
+      marginLeft: "40vw",
       color: "#2E3586",
       margin: "10px 0px",
       fontSize: "28px",
@@ -96,7 +96,7 @@ function Home() {
       let tempLastName = parseString("family", 9);
       let tempGender = parseString("gender", 9);
       let tempBirthDate = parseString("birthDate", 12);
-      let tempAddress = `${parseString("line", 8)} ${parseString("city", 8)}, ${parseString("state", 8)} ${parseString("postalCode", 13)}`;
+      let tempAddress = `${parseString("line", 8)} ${parseString("city", 7)}, ${parseString("state", 8)} ${parseString("postalCode", 13)}`;
       let tempPhone = parseString("phone", 16);
 
       patients.push({

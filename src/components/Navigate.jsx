@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
-import bwellLogo from "../bwell_logo.png";
+import medicalLogo from "../medical-logo.png";
 import profileImage from "../profileImage.png";
 
 function Navigate(props) {
@@ -14,9 +14,9 @@ function Navigate(props) {
         style={{ backgroundColor: "#2E3586" }}
       >
         <div className="container">
-          <img src={bwellLogo} className="App-logo" alt="logo"></img>
+          <img src={medicalLogo} className="App-logo" alt="logo"></img>
           <Link to="/" className="brandName">
-            b.well FE Assignment
+            Company Front-End Application
           </Link>
 
           <div>
@@ -24,7 +24,7 @@ function Navigate(props) {
               <img
                 src={profileImage}
                 className="Profile-image"
-                alt="bwell logo"
+                alt="business logo"
               ></img>
               <Link to="/" className="link">
                 {userName}
